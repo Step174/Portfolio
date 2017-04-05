@@ -4,7 +4,7 @@
 @color-me: #dccbeb;
 @color-prew-info: #2c3f52;
 @color-footer: #ebdccb;
-//цвета стрелок
+//цвета стрелок------
 @arrow: #cccbeb;
 @arrow-hover: #9694d6;
 @arrow-active: #d69694;
@@ -47,6 +47,8 @@ body {
 header {
     position: relative;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     height: 100px;
     background-color: @color-header;
     ul {
@@ -75,6 +77,8 @@ header {
 
 main {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     .about-me {
         display: flex;
         justify-content: center;
@@ -141,9 +145,9 @@ main {
         flex-wrap: wrap;
         justify-content: space-around;
         max-width: 900px;
-        margin: 0 40px;
+        margin: 0 20px;
         .project {
-            outline: 15px solid #cbdaeb;
+            outline: 2px solid #cbdaeb;
             position: relative;
             width: 400px;
             height: 300px;
@@ -286,22 +290,25 @@ footer {
     cursor: pointer;
     transition: 0.6s;
     z-index: 1111;
-    &::before {
+   /* &::before {
         content: "";
         position: absolute;
         top: -70px;
-        left: -97px;
+        
         border: 70px solid red;
         border-color: transparent;
         border-left-color: @arrow-before;
-        margin-left: 40px;
+        
         opacity: 0;
         transition: 0.4s;
         z-index: -1;
-    }
+    }*/
 }
 
 .arrow-right {
+    &:before {
+        left: -60px;
+    }
     &:hover:before {
         opacity: 0.4;
     }
@@ -322,13 +329,13 @@ footer {
     border-color: transparent;
     border-right-color: @arrow;
     /*margin-right: 5px;*/
-    &::before {
+    /*&::before {
         top: -70px;
-        left: -120px;
+        left: -80px;
         border: 70px solid red;
         border-color: transparent;
         border-right-color: @arrow-before;
-    }
+    }*/
     &:hover:before {
         opacity: 0.4;
     }
