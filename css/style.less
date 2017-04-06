@@ -153,8 +153,8 @@
             justify-content: space-around;
             max-width: 900px;
             margin: 0 20px;
-            margin-left: 100px;
-            margin-right: 100px;
+            /*margin-left: 100px;
+            margin-right: 100px;*/
             .project {
                 outline: 2px solid #cbdaeb;
                 position: relative;
@@ -228,6 +228,22 @@
                 }
             }
         }
+        svg {
+           
+            
+        path {
+
+            fill: #ae7aab;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                fill: #efa7eb;
+            }
+            &:active {
+                fill: #e67494;
+            }
+        }
+    }
     }
     
     footer {
@@ -287,82 +303,7 @@
         }
     }
     
-    .arrow {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        border: 50px solid;
-        border-color: transparent;
-        border-left-color: @arrow;
-        /*margin-left: 5px;*/
-        top: 50%;
-        margin-top: -50px;
-        cursor: pointer;
-        transition: 0.6s;
-        z-index: 1111;
-        /* &::before {
-        content: "";
-        position: absolute;
-        top: -70px;
-        
-        border: 70px solid red;
-        border-color: transparent;
-        border-left-color: @arrow-before;
-        
-        opacity: 0;
-        transition: 0.4s;
-        z-index: -1;
-    }*/
-    }
     
-    .arrow-right {
-        right: 0;
-        &:before {
-            left: -60px;
-        }
-        &:hover:before {
-            opacity: 0.4;
-        }
-        &:hover {
-            border-left-color: @arrow-hover;
-        }
-        &:active:before {
-            border-left-color: @arrow-before-active;
-            opacity: 0.3;
-        }
-        &:active {
-            border-left-color: @arrow-active;
-            transition: 0.2s;
-        }
-    }
-    
-    .arrow-left {
-        border-color: transparent;
-        border-right-color: @arrow;
-        left: 0;
-        /*margin-right: 5px;*/
-        /*&::before {
-        top: -70px;
-        left: -80px;
-        border: 70px solid red;
-        border-color: transparent;
-        border-right-color: @arrow-before;
-    }*/
-        &:hover:before {
-            opacity: 0.4;
-        }
-        &:hover {
-            border-right-color: @arrow-hover;
-        }
-        &:active:before {
-            border-right-color: @arrow-before-active;
-            opacity: 0.3;
-        }
-        &:active {
-            border-right-color: @arrow-active;
-            transition: 0.2s;
-        }
-    }
     
     .prew-arrow {
         .prew-2 {
@@ -425,17 +366,17 @@
                 }
             }
             .prew-2 {
-            display: none;
-        }
-        .prew-3 {
-            display: none;
-        }
-        .show-prew {
-            display: flex;
-            animation: shake 0.2s;
-        }
-        .none-prew {
-            display: none;
-        }
+                display: none;
+            }
+            .prew-3 {
+                display: none;
+            }
+            .show-prew {
+                display: flex;
+                animation: shake 0.2s;
+            }
+            .none-prew {
+                display: none;
+            }
         }
     }
