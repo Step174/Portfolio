@@ -334,13 +334,31 @@
     }
     
     @media screen and (max-width: 800px) {
+header {
+        position: relative;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100px;
+        background-color: @color-header;
+        ul {
+            position: relative;
+            top: 40px;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin: 0 auto;
+            list-style: none;
+        }
+    }
+
         .prew-arrow {
             .prew {
                 display: block;
                 width: 100%;
                 margin: 0 auto;
-                margin-left: 100px;
-                margin-right: 100px;
+                margin-left: 20px;
+                margin-right: 20px;
                 .project {
                     width: 100%;
                     margin: 20px auto;
