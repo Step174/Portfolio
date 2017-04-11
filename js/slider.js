@@ -16,7 +16,7 @@ arrowleft.addEventListener("click", function() {
 });
 
 document.querySelectorAll('[href^="#new"]').forEach(function(lnk) {
-  var speed = 0.3;
+  var speed = 0.4;
   lnk.onclick = function() {
     var w = window.pageYOffset,
       hash = this.href.replace(/[^#]*(.*)/, '$1');
