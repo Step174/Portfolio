@@ -231,7 +231,12 @@
         svg {
             position: relative;
             top: 50%;
-            margin-top: -50px;
+            /*margin-top: -50px;*/
+            -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
             /*margin-left: 10px;
             margin-right: 10px;*/
             path {
@@ -409,11 +414,11 @@
             .none-prew {
                 display: none;
             }
-            svg {
+            /*svg {
             position: relative;
             top: 50%;
             margin-top: -50px;
-        }
+        }*/
         }
     }
 @media screen and (max-width: 500px) {
@@ -423,8 +428,8 @@
                 width: 100%;
             }
         }
-        svg {
+        /*svg {
             position: relative;
             margin-top: 521px;
-        }
+        }*/
     }
