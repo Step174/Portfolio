@@ -147,6 +147,7 @@
         position: relative;
         display: flex;
         justify-content: center;
+        align-items: center;
         height: auto;
         .prew {
             display: flex;
@@ -227,8 +228,8 @@
         }
         .arrow {
             position: relative;
-            
-            height: auto;
+            height: 100px;
+          
             /*-webkit-transform: translateY(-50%);
             -moz-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
@@ -236,10 +237,9 @@
             transform: translateY(-50%);*/
         svg {
             position: relative;
-            top: 50%;
-            margin-top: -50px;
+            /*top: 50%;
+            margin-top: -50px;*/
             path {
-                top: 50%;
                 fill: #ae7aab;
                 cursor: pointer;
                 transition: 0.3s;
@@ -369,8 +369,9 @@
             }
         }
         .prew-arrow {
-            position: relative;
+           
             display: flex;
+            align-items: center;
             justify-content: center;
             .prew {
                 display: block;
@@ -420,7 +421,7 @@
             }
             
         }
-        .arrow {
+        /*.arrow {
             position: relative;
             height: auto;
         svg {
@@ -428,7 +429,7 @@
             top: 50%;
             margin-top: 50px;
         }
-    }
+    }*/
     }
     
     @media screen and (max-width: 500px) {
