@@ -227,7 +227,7 @@
         }
         .arrow {
             position: relative;
-            top: 50%;
+            
             height: auto;
             /*-webkit-transform: translateY(-50%);
             -moz-transform: translateY(-50%);
@@ -239,6 +239,7 @@
             top: 50%;
             margin-top: -50px;
             path {
+                top: 50%;
                 fill: #ae7aab;
                 cursor: pointer;
                 transition: 0.3s;
@@ -375,8 +376,8 @@
                 display: block;
                 width: 100%;
                 margin: 0 auto;
-                margin-left: 5px;
-                margin-right: 5px;
+                margin-left: 10px;
+                margin-right: 10px;
                 .project {
                     width: 100%;
                     margin: 20px auto;
@@ -417,12 +418,17 @@
             .none-prew {
                 display: none;
             }
-            .arrow {
-                svg {
-                    marign-top: 521px;
-                }
-            }
+            
         }
+        .arrow {
+            position: relative;
+            height: auto;
+        svg {
+            position: relative;
+            top: 50%;
+            margin-top: 50px;
+        }
+    }
     }
     
     @media screen and (max-width: 500px) {
@@ -431,8 +437,5 @@
             ul {
                 width: 100%;
             }
-        }
-        svg {
-            marign-top: 521px;
         }
     }
