@@ -119,8 +119,6 @@
             display: flex;
             justify-content: center;
             li {
-                /*width: 20%;
-            height: 100px;*/
                 margin: 40px 20px;
                 list-style: none;
                 text-align: center;
@@ -229,29 +227,28 @@
         .arrow {
             position: relative;
             height: 100px;
-          
             /*-webkit-transform: translateY(-50%);
             -moz-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             -o-transform: translateY(-50%);
             transform: translateY(-50%);*/
-        svg {
-            position: relative;
-            /*top: 50%;
+            svg {
+                position: relative;
+                /*top: 50%;
             margin-top: -50px;*/
-            path {
-                fill: #ae7aab;
-                cursor: pointer;
-                transition: 0.3s;
-                &:hover {
-                    fill: #efa7eb;
-                }
-                &:active {
-                    fill: #e67494;
+                path {
+                    fill: #ae7aab;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    &:hover {
+                        fill: #efa7eb;
+                    }
+                    &:active {
+                        fill: #e67494;
+                    }
                 }
             }
         }
-    }
     }
     
     footer {
@@ -365,11 +362,13 @@
                 flex-wrap: wrap;
                 li {
                     margin: 20px 10px;
+                    a {
+                        filter: grayscale(0%);
+                    }
                 }
             }
         }
         .prew-arrow {
-           
             display: flex;
             align-items: center;
             justify-content: center;
@@ -419,17 +418,14 @@
             .none-prew {
                 display: none;
             }
-            
         }
-        /*.arrow {
-            position: relative;
-            height: auto;
-        svg {
-            position: relative;
-            top: 50%;
-            margin-top: 50px;
+        footer {
+            .social {
+                a {
+                    filter: grayscale(0%);
+                }
+            }
         }
-    }*/
     }
     
     @media screen and (max-width: 500px) {
